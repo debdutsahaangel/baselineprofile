@@ -25,7 +25,6 @@ import org.junit.runner.RunWith
  * ```
  * ./gradlew :baselineprofile:connectedBenchmarkReleaseAndroidTest
  * ```
- *
  * You should run the benchmarks on a physical device, not an Android emulator, because the
  * emulator doesn't represent real world performance and shares system resources with its host.
  *
