@@ -32,7 +32,7 @@ jobs:
 
       - name: Generate profile
         run: |
-          ./gradlew :app:generateProdReleaseBaselineProfile
+          ./gradlew :app:generateReleaseBaselineProfile
           -Pandroid.testInstrumentationRunnerArguments.androidx.benchmark.enabledRules=BaselineProfile
           -Pandroid.testoptions.manageddevices.emulator.gpu=swiftshader_indirect
           -Pandroid.experimental.testOptions.managedDevices.emulator.showKernelLogging=true
