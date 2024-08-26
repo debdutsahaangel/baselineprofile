@@ -27,12 +27,14 @@ android {
     }
 
     targetProjectPath = ":app"
-
+    testOptions {
+        animationsDisabled = true
+    }
     testOptions.managedDevices.devices {
         create<ManagedVirtualDevice>("pixel6Api33") {
             device = "Pixel 6"
             apiLevel = 33
-            systemImageSource = "google"
+            systemImageSource = "aosp-atd"
         }
     }
 }
